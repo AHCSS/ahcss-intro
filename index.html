@@ -41,18 +41,16 @@
         .highlight {
             font-weight: bold;
         }
-
-        /* --- 新增：图片与图注的样式 --- */
         figure {
-            max-width: 85%; /* 图片最大宽度占页面的85%，避免太宽 */
-            margin: 25px auto; /* 上下留白，左右自动居中 */
+            max-width: 75%; 
+            margin: 25px auto;
             text-align: center;
         }
         figure img {
-            width: 100%; /* 图片宽度填满figure容器 */
-            height: auto; /* 高度按比例自动缩放，不变形 */
-            border-radius: 4px; /* 可选：给图片加一点点圆角，更美观 */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 可选：给图片加一点点阴影，更有层次 */
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
         }
         figcaption {
             margin-top: 10px;
@@ -67,7 +65,10 @@
 
     <h2>一、软件概述</h2>
     <p>AHCSS (Anhui Agricultural University High-throughput Computing Service Software)是由安徽农业大学传感器与系统集成实验室开发的一款集成化、自动化计算材料学工具软件。该软件旨在解决第一性原理计算流程中存在的操作繁琐、数据管理混乱以及远程服务器交互不便等痛点。通过集成模型查看、元素替换、气固界面构建及远程作业自动化处理四大核心功能，AHCSS将科研人员从大量重复性的文件操作和命令行交互中解放出来，显著提高计算研究的工作效率。</p>
-
+    <figure>
+        <img src="cover.png" alt="软件封面">        
+        <figcaption>AHCSS软件</figcaption>    
+    </figure>
     <h2>二、核心功能模块</h2>
 
     <h3>1. 计算模型查看工具</h3>
@@ -116,6 +117,11 @@
         <figcaption>图2.3 可视化元素周期表</figcaption>
     </figure>
 
+    <figure>                
+        <img src="finish2.png" alt="完成替换">                
+        <figcaption>图2.4 完成替换</figcaption>        
+    </figure>
+
     <h3>3. 气固界面构建工具</h3>
     <p><span class="highlight">功能定位：</span>自动化构建气体分子在基底表面的吸附模型。</p>
     <p><span class="highlight">核心功能：</span></p>
@@ -129,6 +135,17 @@
         <img src="function3.png" alt="气固界面构建工具">
         <figcaption>图3.1 气固界面构建工具</figcaption>
     </figure>
+    
+    <figure>        
+        <img src="progress.png" alt="构建气固界面">        
+        <figcaption>图3.2 构建气固界面</figcaption>    
+    </figure>
+    
+    <figure>                
+        <img src="finish.png" alt="完成建模">                
+        <figcaption>图3.3 完成建模</figcaption>        
+    </figure>
+    
 
     <h3>4. 远程文件处理工具</h3>
     <p><span class="highlight">功能定位：</span>该模块是连接本地计算资源与远程超算中心的桥梁，实现了对集群的全图形化操作。</p>
@@ -158,6 +175,22 @@
         </li>
     </ul>
 
+    <figure>        
+        <img src="function4.png" alt="气固界面构建工具">        
+        <figcaption>图4.1 气固界面构建工具</figcaption>    
+    </figure>
+
+    <figure>                
+        <img src="remotecommand.png" alt="远程命令行">                
+        <figcaption>图4.2 远程命令行</figcaption>        
+    </figure>
+    
+    <figure>        
+        <img src="operation.png" alt="远程批量任务处理">        
+        <figcaption>图4.3 远程批量任务处理</figcaption>    
+    </figure>
+    
+
     <h2>三、技术特点</h2>
     <ol>
         <li>基于PySide6（Qt for Python）开发，支持Windows10/11、macOS及主流Linux发行版。</li>
@@ -176,5 +209,9 @@
 
     <h2>五、适用人群</h2>
     <p>适用于使用VASP进行第一性原理计算的研究人员，特别是需要批量处理POSCAR、生成POTCAR、远程提交Slurm作业、收集电子结构数据及构建吸附模型的高通量计算场景。</p>
+    <div class="download-box">
+        <a href="AHCSS_V12.zip" class="download-btn" download>立即下载 AHCSS 安装包</a>
+        <p class="download-tip">当前版本：V12 | 适配 Windows 10/11 系统</p>
+    </div>
 </body>
 </html>
