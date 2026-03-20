@@ -78,20 +78,24 @@
         <li>POSCAR文件查找：自动递归扫描用户指定的根目录，快速定位所有包含POSCAR文件的子文件夹。</li>
         <li>集成VESTA可视化：与专业的晶体结构可视化软件VESTA无缝集成。用户只需点击对应文件夹按钮，即可自动调用VESTA打开其中的POSCAR文件。</li>
     </ul>
+    <p><span class="highlight">使用步骤：</span></p>
+    <ul>
+        <li>配置VESTA路径 → 配置需浏览的文件夹 → 选择对应文件夹按钮，自动调用VESTA打开。</li>
+    </ul>
     
     <figure>
-        <img src="function1.png" alt="计算模型查看工具">
-        <figcaption>图1.1 计算模型查看工具</figcaption>
+        <img src="step1.png" alt="配置VESTA路径">
+        <figcaption>图1.1 步骤一：配置VESTA路径</figcaption>
     </figure>
     
     <figure>
-        <img src="addfolder1.png" alt="POSCAR文件查找">
-        <figcaption>图1.2 POSCAR文件查找</figcaption>
+        <img src="step2.png" alt="配置需浏览的文件夹">
+        <figcaption>图1.2 步骤二：配置需浏览的文件夹</figcaption>
     </figure>
     
     <figure>
-        <img src="POSCARvisualization.png" alt="集成VESTA可视化">
-        <figcaption>图1.3 集成VESTA可视化</figcaption>
+        <img src="step3.png" alt="选择对应文件夹按钮，自动调用VESTA打开">
+        <figcaption>图1.3 步骤三选择对应文件夹按钮，自动调用VESTA打开</figcaption>
     </figure>
 
     <h3>2. 元素种类调整工具</h3>
@@ -101,25 +105,29 @@
         <li>智能元素识别与替换：用户指定目标根目录后，工具会自动找出所有POSCAR文件中的现有元素列表。用户只需输入目标元素和替换后的新元素，程序即可在所有相关的POSCAR文件中进行精准替换并创建以新元素命名的新文件夹，将修改后的POSCAR文件存入其中。</li>
         <li>可视化元素周期表：内置交互式元素周期表对话框，用户可通过点击元素符号直接选择待替换的元素，无需手动输入。</li>
     </ul>
+    <p><span class="highlight">使用步骤：</span></p>    
+    <ul>        
+        <li>配置需修改元素的文件夹路径 → 填入被替换的元素 → 在元素周期表选择新替换元素 → 完成替换。</li>    
+    </ul>
     
     <figure>
-        <img src="function2.png" alt="元素种类调整工具">
-        <figcaption>图2.1 元素种类调整工具</figcaption>
+        <img src="step4.png" alt="配置需修改元素的文件夹路径">
+        <figcaption>图2.1 步骤一：配置需修改元素的文件夹路径</figcaption>
     </figure>
     
     <figure>
-        <img src="addfolder2.png" alt="智能元素识别与替换">
-        <figcaption>图2.2 智能元素识别与替换</figcaption>
+        <img src="step5.png" alt="填入被替换的元素">
+        <figcaption>图2.2 步骤二：填入被替换的元素</figcaption>
     </figure>
     
     <figure>
-        <img src="periodictable.png" alt="可视化元素周期表">
-        <figcaption>图2.3 可视化元素周期表</figcaption>
+        <img src="step6.png" alt="在元素周期表选择新替换元素">
+        <figcaption>图2.3 步骤三：在元素周期表选择新替换元素</figcaption>
     </figure>
 
     <figure>                
-        <img src="finish2.png" alt="完成替换">                
-        <figcaption>图2.4 完成替换</figcaption>        
+        <img src="step7.png" alt="完成替换">                
+        <figcaption>图2.4 步骤四：完成替换</figcaption>        
     </figure>
 
     <h3>3. 气固界面构建工具</h3>
@@ -130,22 +138,39 @@
         <li>灵活的吸附距离设置：支持用户以埃（Å）为单位输入具体的吸附距离偏移量，也支持使用默认的分数坐标值。</li>
         <li>中心原子定位与坐标转换：用户可通过输入分数坐标或指定基底POSCAR中的原子行数两种方式，精确定位吸附中心。内置坐标转换算法，能将气体分子的坐标从其原始基向量系统，精确转换到基底材料的基向量系统中，并依据设定的吸附距离，将气体分子准确放置在基底上方，生成可直接用于VASP计算的完整POSCAR文件。</li>
     </ul>
-    
+    <p><span class="highlight">使用步骤：</span></p>        
+    <ul>                
+        <li>设置吸附距离和连接符 → 选择气体和基底文件夹 → 填入中心原子输入方式 → 填入中心原子相关数据 → 等待处理 → 完成构建。</li>        
+    </ul>
     <figure>
-        <img src="function3.png" alt="气固界面构建工具">
-        <figcaption>图3.1 气固界面构建工具</figcaption>
+        <img src="step8.png" alt="设置吸附距离和连接符">
+        <figcaption>图3.1 步骤一：设置吸附距离和连接符</figcaption>
     </figure>
     
     <figure>        
-        <img src="progress.png" alt="构建气固界面">        
-        <figcaption>图3.2 构建气固界面</figcaption>    
+        <img src="step9.png" alt="选择气体和基底文件夹">        
+        <figcaption>图3.2 步骤二：选择气体和基底文件夹 </figcaption>    
     </figure>
     
     <figure>                
-        <img src="finish3.png" alt="完成建模">                
-        <figcaption>图3.3 完成建模</figcaption>        
+        <img src="step10.png" alt="填入中心原子输入方式">                
+        <figcaption>图3.3 步骤三：填入中心原子输入方式</figcaption>        
+    </figure>
+
+    <figure>                        
+        <img src="step11.png" alt="填入中心原子相关数据">                        
+        <figcaption>图3.4 步骤四：填入中心原子相关数据</figcaption>            
     </figure>
     
+    <figure>                                
+        <img src="step12.png" alt="等待处理">                                
+        <figcaption>图3.5 步骤五：等待处理</figcaption>                
+    </figure>
+
+    <figure>                                        
+        <img src="step12.png" alt="完成构建">                                        
+        <figcaption>图3.6 步骤六：完成构建</figcaption>                    
+    </figure>
 
     <h3>4. 远程文件处理工具</h3>
     <p><span class="highlight">功能定位：</span>该模块是连接本地计算资源与远程超算中心的桥梁，实现了对集群的全图形化操作。</p>
@@ -210,8 +235,17 @@
     <h2>五、适用人群</h2>
     <p>适用于使用VASP进行第一性原理计算的研究人员，特别是需要批量处理POSCAR、生成POTCAR、远程提交Slurm作业、收集电子结构数据及构建吸附模型的高通量计算场景。</p>
     <div class="download-box">
-        <a href="AHCSS_V12.zip" class="download-btn" download>立即下载 AHCSS 安装包</a>
-        <p class="download-tip">当前版本：V12 | 适配 Windows 10/11 系统</p>
-    </div>
+    <h3>AHCSS 软件相关文件下载</h3>
+    <p style="color: #e74c3c; font-weight: bold; margin: 10px 0;">⚠️ 请先下载并仔细阅读版权声明，同意后再使用本软件</p>
+    <a href="AHCSS_Copyright_Notice.docx" class="download-btn" download>
+        下载版权与权责声明
+    </a>
+    <!-- 软件安装包网盘下载 -->
+    <a href="https://pan.quark.cn/s/ee8a7eda46a1" target="_blank" class="download-btn" style="margin-left:10px;">
+        点击跳转夸克网盘下载软件安装包
+    </a>
+    <p class="download-tip">软件包大小：243MB（适配Windows 10/11）｜声明文件为Word格式，可直接打开查看</p>
+</div>
+   
 </body>
 </html>
